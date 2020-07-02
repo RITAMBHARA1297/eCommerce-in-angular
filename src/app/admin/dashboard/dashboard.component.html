@@ -1,0 +1,53 @@
+<section class="banner">
+    <h1>Users Details</h1>
+    <div class="container">
+        <table class="table m-5 font-weight-bold">
+            <thead>
+                <tr>
+                    <th>
+                        Name 
+                    </th>
+                    <th>
+                        Number
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        cart
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngIf="display.length==0"  >
+                <td colspan="4" >NO DATA</td>
+                </tr>
+                <tr *ngFor=" let i of display">
+                    <td>
+                        {{i.name}}
+                    </td>
+                    <td>
+                        {{i.number}}
+                    </td>
+                    <td>
+                        {{i.email}}
+                    </td>
+                    <td>
+                        <ul *ngFor = "let j of i.cart">
+                            <li *ngIf = "i.cart.length == 0">
+                                -
+                            </li>
+                            <li>
+                                {{j.name}}-{{j.qty}}
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-around">
+            <button [routerLink]="['']">Back</button>
+            <button [routerLink]="['/todo']">View Online</button>
+        </div>
+    </div>
+</section>

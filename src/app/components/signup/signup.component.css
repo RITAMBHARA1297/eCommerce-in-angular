@@ -1,0 +1,30 @@
+.banner{background-image: url('../../../assets/images/home_banner.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;}
+ 
+form{padding: 10% 20%;}
+
+.gradient{background: rgba(0,0,0,0.3);
+    padding: 5%;}
+
+label{font-size: xx-large;
+    color: wheat;
+    font-family: -webkit-pictograph;}
+
+small{font-size: large;
+    color: red!important;
+    font-family: -webkit-pictograph;}
+
+.form_heading{    font-size: xxx-large;
+    margin-bottom: 5%;
+    margin-top: -10%;
+    color: teal;
+    border-bottom: solid;}
+
+a{font-family: -webkit-pictograph;
+        color: wheat;
+        font-size: large;}
+
+a:hover{color: blue;}
+
+.gender{font-size: x-large!important;}

@@ -1,0 +1,40 @@
+<p-toast position="center"></p-toast>
+<section class="banner">
+    <div class="container">
+      <form [formGroup]="signupForm" (ngSubmit)="addUser()">
+        <div class="text-center form_heading">
+          SignUp Form
+        </div>
+        <div class="gradient">
+            <label >Name</label>
+            <input type="text"  formControlName="name" class="form-control">
+            <label>Phone Number</label>
+            <input type="number"  formControlName="number" class="form-control" maxlength="10"> 
+            <label >Email address</label>
+            <input type="email"  formControlName="email" class="form-control"aria-describedby="emailHelp">
+            <small class="form-text text-muted">email should be unique</small>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Gender</label>
+            <div class="form-check">
+              <label class="form-check-label gender" for="radio1">
+                <input type="radio" class="form-check-input "  formControlName="Gender" id="radio1" name="Gender" value="male" checked>Male
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label gender" for="radio2">
+                <input type="radio" class="form-check-input "  formControlName="Gender" id="radio2" name="Gender" value="female">Female
+              </label>
+            </div>
+          </div>
+            <label >Password</label>
+            <input type="password"  formControlName="pass" class="form-control" >
+          <div>
+            <br/>
+            <button type="submit" class="btn btn-primary mr-3" [routerLink]="['/login']">Back</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          </div>
+        </form>
+      </div>
+  </section>
+  

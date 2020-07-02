@@ -1,0 +1,18 @@
+
+header{background-color: rgba(0, 0, 0, 0.3);
+   padding: 1%;}
+
+
+h2{font-family: cursive;
+font-size: xxx-large;
+color: darkorchid;}
+
+button{font-size: x-large;
+border: solid darkorchid;}
+
+button:hover{font-size: xx-large;
+        background-color: darkorchid;
+        color: aliceblue;}
+.view_block{display: block;}
+.view_hide{display: none;}
+svg:hover {height:40pt; width:40pt;}

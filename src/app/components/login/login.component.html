@@ -1,0 +1,25 @@
+<p-toast position="center"></p-toast>
+<section class="banner">
+  <app-head></app-head>
+  <div class="container">
+    <form [formGroup]="LoginForm" (ngSubmit)="CheckUser()">
+      <div class="text-center form_heading">
+        Login Form
+      </div>
+      <div class="gradient">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" formControlName="email" class="form-control" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" formControlName="password" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary mr-3">Back</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a id="emailHelp" class="form-text float-right" [routerLink]="['/signup']">Not a User..... Sign UP</a>
+      </div>
+      </form>
+    </div>
+</section>

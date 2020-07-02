@@ -1,0 +1,60 @@
+<p-toast position="center"></p-toast>
+<section class="banner">
+<app-head [child]="parent"></app-head>
+<div *ngIf = "showLoading">Loadingggg</div>
+<section class="items">
+    <div class="container">
+        <div class="row p-4 justify-content-around">
+            <div class="card shadow col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="../../../assets/images/img1.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Floral Print</h5>
+                <p class="card-text">PRICE : $45.3</p>
+                <a class="btn btn-primary" (click)="addToCart(1)">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card shadow col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="../../../assets/images/img2.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Party Perfect</h5>
+                <p class="card-text">PRICE : $65.2</p>
+                <a  class="btn btn-primary"  (click)="addToCart(2)">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card shadow col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="../../../assets/images/img3.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Dark Maroon Dress</h5>
+                <p class="card-text">PRICE : $50</p>
+                <a  class="btn btn-primary"  (click)="addToCart(3)">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="row p-4 justify-content-around">
+            <div class="card shadow col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="../../../assets/images/img4.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Casual Dress</h5>
+                <p class="card-text">PRICE : $67</p>
+                <a  class="btn btn-primary"  (click)="addToCart(4)">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card shadow col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="../../../assets/images/img5.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Formal Pant</h5>
+                <p class="card-text">PRICE : $49.8</p>
+                <a  class="btn btn-primary"  (click)="addToCart(5)">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card shadow col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="../../../assets/images/img6.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Orange Strip</h5>
+                <p class="card-text">PRICE : $55.78</p>
+                <a class="btn btn-primary"  (click)="addToCart(6)">Add To Cart</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>

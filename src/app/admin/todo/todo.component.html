@@ -1,0 +1,43 @@
+<section class="banner">
+    <h1>Users Details</h1>
+    <div class="container">
+        <button class="m-2" (click)="normalget()">Get</button>
+        <button class="m-2" (click)="normalgetid()">Get By ID</button>
+        <button class="m-2" (click)="normalpost()">Post</button>
+        <button class="m-2" (click)="normalput()">Put</button>
+        <button class="m-2" (click)="normalpatch()">Patch</button>
+        <button class="m-2" (click)="normaldelete()">Delete</button>
+        <p>{{deleteMsg}}</p>
+        <div class="d-flex justify-content-around">
+            <table border=1  class="bg-secondary">
+                <thead>
+                  <tr>
+                    <th>UserID</th>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                    <th colspan="2">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of value">
+                    <td>{{i.userId}}</td> 
+                    <td>{{i.id}}</td>
+                    <td>{{i.title}}</td>
+                    <td>{{i.body}}</td>
+                    <td>
+                        <a (click)="LocalTitle.value=i.title;check_true();">Update</a>
+                        <a (click)="updateLocal(i,LocalTitle.value);LocalTitle.value='';check_false();">      OK</a>
+                        <br/>
+                        <input #LocalTitle type="text" [ngClass]=" {'view_block': status, 'view_hide':!status}" >   
+                    </td>
+                    <td>
+                        <a (click)="deleteLocal(i)">Delete</a>
+                    </td>
+                </tr>
+                </tbody>
+              </table>
+        </div>
+        <button [routerLink]="['']">Back</button>
+    </div>
+</section>
